@@ -22,7 +22,7 @@ const Search = () => {
             setResults(data.query.search);
         }
 
-        if(term && results.length) {
+        if(term && !results.length) {
             search();
         }
 
